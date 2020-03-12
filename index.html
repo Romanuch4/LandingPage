@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Web-Site</title>
+    <meta charset="utf-8"/>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:title" content="">
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link rel="apple-touch-icon" href="#"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="#"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="#"/>
+    <link href="#" rel='alternate' title='Sitemap' type='application/rss+xml'/>
+    <link rel="canonical" href="#"/>
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#36A26B">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#36A26B">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
+  <!--Иконка в браузере-->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <!-- Bootstrap,CSS -->
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/media(1).css"/>
+  <link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="canonical" href="https://wowjs.uk/">
+</head>
+<body>
+
+<!--======= Preloader =======-->
+	<div class="preloader">
+		<div class="cssload-dots">
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+		</div>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="goo">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+					<!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+				</filter>
+			</defs>
+		</svg>
+	</div>
+
+<!--==================== 1 screen ====================-->
+	<div class="first-background">
+		<header class="header width">
+			<div class="header__left">
+				<img class="header__logo" src="img/school.png" alt="security school"/>
+				<div class="header__hr-vertical"></div>
+				<div>
+					<img src="img/cards.png" alt="Bashkir Register social cards">
+					<p class="header__p">
+						Башкирский регистр 
+						социальных карт
+					</p>
+			</div>
+			</div>
+			<div class="header__content">
+				<ul class="header__socials">
+					<li>
+						<img class="header__socials__icon" src="icons/phone.png" alt="phone"/>
+						<span class="header__socials__text">+7 (987) 019-48-00</span>
+					</li>
+
+					<li>
+						<img class="header__socials__icon" src="icons/support.png" alt="support"/>
+						support@safesch.ru
+					</li>
+				</ul>
+
+				<div class="header__menu">
+					<input class="switcher" type="checkbox" id="menu"/>
+					<label class="label open" for="menu">
+						<i class="fa fa-bars"></i>
+					</label>
+
+					<nav class="header__menu__nav">
+						<ul class="header__menu__ul">
+							<li><a class="header__menu__a" href="#">Возможности</a></li>
+							<li><a class="header__menu__a" href="#">Как это работает?</a></li>
+							<li><a class="header__menu__a" href="#">Уведомления</a></li>
+							<li><a class="header__menu__a header__menu__a-last" href="#">Преимущества</a></li>
+						</ul>
+
+						<label class="label close" for="menu">
+							<i class="fa fa-times"></i>
+						</label>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="width">
+			<hr class="first-hr"/>
+		</div>
+
+		<main class="main">
+
+		</main>
+	</div>
+
+<!--==================== Js ====================-->
+	<script src="js/wow.min.js"></script>
+	<script src="js/preloader.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Иконки с fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"/>
+</body>
+</html>

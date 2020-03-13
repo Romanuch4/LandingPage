@@ -545,6 +545,8 @@ li {
 
 .header__menu {
 	align-self: flex-end;
+	position: relative;
+	z-index: 5;
 }
 
 .switcher {
@@ -603,6 +605,106 @@ li {
 	border: none;
 }
 
-.main {
+.first {
 	padding-top: 25px;
+	padding-bottom: 120px;
+	display: flex;
 }
+
+.first__left {
+	margin-top: 45px;
+}
+
+.first__title {
+	color: #fff;
+	font-size: 43px;
+	max-width: 690px;
+	font-family: 'Geogrotesque Cyr';
+	line-height: 1.2;
+	font-weight: 300;
+	margin-bottom: 36px;
+}
+
+.first__sub-title {
+	font-size: 22px;
+	color: #fff;
+	font-family: 'Proxima Nova Cn Th';
+	max-width: 500px;
+	font-weight: 300;
+	line-height: 1.3;
+	margin-bottom: 41px;
+}
+
+.first__button {
+	padding: 25px 25px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: 'Proxima Nova Cn Rg';
+	font-size: 20px;
+	background: transparent;
+	border-radius: 8px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	width: 200px;
+}
+
+.first__button__span {
+	position: relative;
+}
+
+.first__button:hover .first__button__effect{
+	top: 400px;
+}
+
+.first__button__effect {
+	position: absolute;
+	top: 330px;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	transition: 0.5s ease;
+}
+
+.first__button__effect::after,
+.first__button__effect::before {
+	content: '';
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -75%);
+}
+
+.first__button__effect::after {
+	border-radius: 40%;
+	animation: wave 5s linear infinite;
+	background-color: rgba(179, 255, 28, 0.5);
+}
+
+.first__button__effect::before {
+	border-radius: 45%;
+	animation: wave 7s linear infinite;
+	background-color: rgba(92, 235, 15, 0.8);
+}
+
+@keyframes wave {
+	0% {
+		transform: translate(-50%, -75%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -75%) rotate(90deg);
+	}
+}
+
+.first__right {
+	position: relative;
+	right: 170px;
+}
+
+.first__right__img {
+	position: absolute;
+}
+
+/*============= 2 screen =============*/

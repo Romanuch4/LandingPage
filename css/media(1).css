@@ -175,3 +175,32 @@
     transform: scale(0.4);
   }
 }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 434px) {
+  .main__title {
+    width: 100%;
+  }
+
+  .main__title::before {
+    top: 0;
+    right: 0;
+    bottom: 120px;
+    left: 0;
+    margin: auto;
+  }
+
+  .second__content__item {
+    margin: 0 31px 36px 31px;
+    align-items: center;
+  }
+
+  .second__content__sub-title, 
+  .second__content__text {
+    text-align: center;
+  }
+  .second__br {
+    display: none;
+  } 
+}
+

@@ -725,13 +725,15 @@ li {
 	font-weight: 400;
 	position: relative;
 	margin: 0 auto;
-	max-width: 450px;
 }
 
 .main__title::before {
 	position: absolute;
-	top: -40px;
-	left: 215px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+	top: -100px;
 	box-sizing: border-box;
 	content: '';
 	width: 28px;
@@ -773,4 +775,107 @@ li {
 	font-size: 20.32px;
 	font-family: 'Proxima Nova Cn Rg';
 	color: #7C7C7C;
+}
+
+/*============= 3 screen =============*/
+.third {
+	background-color: #FAFAFA;
+	padding: 100px 0 70px 0;
+}
+
+.main__title__modificated::after {
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	top: -35px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	content: '';
+	width: 28px;
+	height: 28px;
+	border: 3px solid #8ECD30;
+	border-radius: 6px;
+	transform: translate(30%, -50%) rotate(45deg);
+}
+
+.main__title__modificated::before{
+	right: 0;
+  bottom: 0;
+  left: 0;
+	top: -70px;
+	transform: translate(-30%, -58%) rotate(45deg);
+}
+
+.third__main {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.third__content {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.third__content__item {
+	margin-right: 128px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 320px;
+	position: relative;
+}
+
+.third__content__item__img {
+	height: 300px;
+	width: 278px;
+}
+
+.third__content__item__img-1 {
+	position: relative;
+	right: 10px;
+	width: 266px;
+}
+
+.third__content__item__img-2 {
+	position: relative;
+	left: 10px;
+	width: 266px;
+}
+
+.third__content__item::after {
+	content: "- - - - - - - - - - - - - - - - - - - - - - - - -";
+	font-family: 'PT Sans';
+	color: #AAAAAA;
+	width: 188px;
+	height: 1px;
+	position: absolute;
+	top: 150px;
+	left: 280px;
+}
+
+.third__content__item-mod::after {
+	top: 135px;
+	content: "- - - - - - - - - - - - - - - - - - - - - - - - - -";
+	width: 200px;
+	left: 300px;
+}
+
+.third__content__item-1 {
+	margin-right: 0;
+}
+
+.third__content__item-1::after {
+	display: none;
+}
+
+.third__content__item__title {
+	margin-top: 24px;
+	font-family: 'Proxima Nova Cn Rg';
+	font-size: 22.86px;
+	color: #3A3A3A;
+	width: 320px;
+	text-align: center;
+	font-weight: 400;
 }
